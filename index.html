@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Gen (Custom)</title>
+    <link rel="icon" href="favcoin.jpg">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="meme-generator">
+      <button class="generate-meme-btn" onClick="onClick()">Generate Meme</button>
+      <p><h2>Memes Seen: <a id="clicks">1</a></h2></p>
+      <h2 class="meme-title">Loading...</h2>
+
+      <img src="" alt="" />
+      <div class="meme-author"></div>
+    </div>
+
+    <script src="main.js"></script>
+    <script type="text/javascript">
+     var clicks = 1;
+
+function onClick() {
+  clicks += 1;
+  document.getElementById("clicks").innerHTML = clicks;
+};
+    </script>
+</html>
